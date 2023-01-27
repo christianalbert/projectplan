@@ -1,0 +1,21 @@
+{
+	"name": "Codespaces Rust Starter",
+	"extensions": [
+		"cschleiden.vscode-github-actions",
+		"franneck94.vscode-rust-extension-pack",
+		"ms-vsliveshare.vsliveshare",
+		"matklad.rust-analyzer",
+		"serayuzgur.crates",
+		"vadimcn.vscode-lldb",
+		"ms-azuretools.vscode-docker",
+		"GitHub.copilot"
+	],
+	"dockerFile": "Dockerfile",
+	"settings": {
+		"editor.formatOnSave": true,
+		"files.exclude": {
+			"**/CODE_OF_CONDUCT.md": true,
+			"**/LICENSE": true
+		}
+	}
+}
