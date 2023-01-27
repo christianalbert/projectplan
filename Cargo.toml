@@ -2,10 +2,19 @@
 name = "projectplan"
 version = "0.1.0"
 authors = ["Christian Albert"]
-edition = "2018"
+edition = "2021"
+autobins = false
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-	
+
+[[bin]]
+name = "pp_service"
+path = "src/main.rs"
+
+[lib]
+name = "pp_backend"
+path = "src/lib.rs"
+
 
 [dependencies]
 rocket = { git = "https://github.com/SergioBenitez/Rocket", rev = "4dcd928" }
