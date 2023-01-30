@@ -10,7 +10,15 @@ apt-get install -y \
   vim \
   build-essential \
   pkg-config \
-  openssl
+  openssl \
+  libmysqlclient-dev \
+  libssl-dev \
+  libsqlite3-0 \
+  libsqlite3-dev \
+  libpq5 \
+  libpq-dev 
+
+
 
 ## Install rustup and common components
 curl https://sh.rustup.rs -sSf | sh -s -- -y 
@@ -18,4 +26,8 @@ curl https://sh.rustup.rs -sSf | sh -s -- -y
 source "$HOME/.cargo/env"
 
 rustup update
+
+cargo install diesel_cli
+
+
 
